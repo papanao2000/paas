@@ -14,10 +14,6 @@ from PIL import Image
 from config import ecs_test_drive, piper_mongodb
 
 ### Local or Remote MongoDB instance
-# client = MongoClient("mongodb://USERNAME:PASSWORD@cluster0-shard-00-00.mzmpq.mongodb.net:27017,cluster0-shard-00-01.mzmpq.mongodb.net:27017,cluster0-shard-00-02.mzmpq.mongodb.net:27017/?ssl=true&replicaSet=atlas-4qm2w8-shard-0&authSource=admin&retryWrites=true&w=majority")
-######## Delete next line for PIPER
-# client = MongoClient("mongodb://piperdb1:VtV54NdmasshdJvg@cluster0-shard-00-00.jnkoj.mongodb.net:27017,cluster0-shard-00-01.jnkoj.mongodb.net:27017,cluster0-shard-00-02.jnkoj.mongodb.net:27017/?ssl=true&replicaSet=atlas-10dctt-shard-0&authSource=admin&retryWrites=true&w=majority")
-
 DB_USER = piper_mongodb['mongodb_user']  
 DB_PASSWORD = piper_mongodb['mongodb_password']  
 db_arg = "mongodb://" + DB_USER + ":" + DB_PASSWORD + "@cluster0-shard-00-00.jnkoj.mongodb.net:27017,cluster0-shard-00-01.jnkoj.mongodb.net:27017,cluster0-shard-00-02.jnkoj.mongodb.net:27017/?ssl=true&replicaSet=atlas-10dctt-shard-0&authSource=admin&retryWrites=true&w=majority"
