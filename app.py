@@ -9,6 +9,7 @@ import os
 from flask import Flask, render_template, request
 from models import get_photos, insert_photo, upload_photo
 
+print("*** started app ***")
 # Create a Flask instance
 app = Flask(__name__)
 
